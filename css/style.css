@@ -1,0 +1,32 @@
+.box{
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+.box img{
+  width: 100%;
+}
+.overlay{
+	position: absolute;
+  	top: 0px;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+ 	transition: .5s ease;
+  	background-color: black;
+}
+.box:hover .overlay {
+  opacity: 1;
+}
+.style{
+	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
